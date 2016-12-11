@@ -1,0 +1,14 @@
+{
+  "name": "dependencies",
+  "version": "1.0.0",
+  "description": "A utility for parsing a JavaScript file's dependency modules",
+  "main": "dependencies.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Justin Lawrence",
+  "license": "ISC",
+  "dependencies": {
+    "acorn": "^4.0.3"
+  }
+}
