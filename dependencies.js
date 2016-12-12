@@ -4,7 +4,7 @@ const acorn = require('acorn');
 
 myArgs = process.argv.slice(2);
 var read = fs.readFileSync(myArgs[0]);
-var str = read.toString().split('\n');
+var lines = read.toString().split('\n');
 
 var result;
 var obj = {};
@@ -13,7 +13,7 @@ var req1 = /require\(\"\./;
 var req2 = /\)\./;
 var req3 = /require\(/;
 var req4 = /import/;
-str.forEach(function(line) {
+lines.forEach(function(line) {
   var name = '';
   var val = '';
   if((req.test(line)||req1.test(line))&&req2.test(line)) {
