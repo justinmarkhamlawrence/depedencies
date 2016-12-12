@@ -6,7 +6,6 @@ myArgs = process.argv.slice(2);
 var read = fs.readFileSync(myArgs[0]);
 var str = read.toString().split('\n');
 
-var yup = [];
 var result;
 var obj = {};
 var req = /require\(\'\./;
